@@ -41,3 +41,9 @@ Este proyecto demuestra mi capacidad para:
 1.  **Automatizar procesos de calidad:** Evitando que código con errores de sintaxis o pruebas fallidas llegue al servidor de pruebas.
 2.  **Gestionar Entornos (Staging vs. Producción):** Comprendiendo las metodologías ágiles de despliegue por ramas.
 3.  **Manejar arquitecturas de software modernas:** Conectando flujos con APIs críticas del mercado chileno (Transbank).
+
+---
+## 📂 Casos de Prueba Documentados
+*   [Reporte Unificado de Pruebas de API (Sprint QA)](tests/reporte-pruebas-apis.md) — Documentación técnica completa con capturas de pantalla de terminal y análisis de endpoints (Autenticación, WhatsApp y Webpay).
+
+   
