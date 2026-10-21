@@ -11,7 +11,7 @@ Validar que la API del MVP procesa correctamente los payloads de inicio de sesi�
 
 
 ### Evidencia de la Terminal
-![Evidencia Autenticación](../evidencia/evidencia-curl-rbac.png)
+![Evidencia Autenticación](../evidencias/evidencia-curl-rbac.png)
 
 Caso de Prueba: Simulación de Autenticación y Control de Roles (RBAC)
 Propósito: Validar que la API del MVP procesa correctamente los payloads de inicio de sesión de los operadores en terreno y encapsula las credenciales y alcances de permisos de la NTI-05.
@@ -33,7 +33,7 @@ Comportamiento Perimetral: El backend procesó las cabeceras Content-Type: appli
 [Escribe aquí el objetivo de esta prueba, por ejemplo: Validar el envío de notificaciones automáticas de entrega al cliente]
 
 ### Evidencia de la Terminal
-![Evidencia WhatsApp](../evidencia/evidencia-whatsapp.png)
+![Evidencia WhatsApp](../evidencias/evidencia-whatsapp.png)
 
 ### Análisis Técnico
 * Caso de Prueba: Simulación de Mensajería y Redirección (WhatsApp Business API)
@@ -52,7 +52,7 @@ Respuesta de Redirección Controlada: El servidor perimetral procesó los 281 by
 [Escribe aquí el objetivo, por ejemplo: Verificar la respuesta del Sandbox de Webpay ante transacciones simuladas]
 
 ### Evidencia de la Terminal
-![Evidencia Transbank](../evidencia/evidencia-transbank.png)
+![Evidencia Transbank](../evidencias/evidencia-transbank.png)
 
 ### Análisis Técnico
 * Evidencias de Pruebas de Integración de APIs (QA)
