@@ -11,7 +11,7 @@ Validar que la API del MVP procesa correctamente los payloads de inicio de sesi�
 
 
 ### Evidencia de la Terminal
-![Evidencia Autenticaci처n](../evidencias/evidencia-curl-rbac.png)
+![Evidencia Autenticaci처n](.github/evidencias/evidencia-curl-rbac.png)
 
 Caso de Prueba: Simulaci처n de Autenticaci처n y Control de Roles (RBAC)
 Prop처sito: Validar que la API del MVP procesa correctamente los payloads de inicio de sesi처n de los operadores en terreno y encapsula las credenciales y alcances de permisos de la NTI-05.
