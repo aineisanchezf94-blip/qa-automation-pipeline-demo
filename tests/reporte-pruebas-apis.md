@@ -11,7 +11,7 @@ Validar que la API del MVP procesa correctamente los payloads de inicio de sesi�
 
 
 ### Evidencia de la Terminal
-![Evidencia Autenticación](.github/evidencias/evidencia-curl-rbac.png)
+![Evidencia Autenticación](/evidencias/evidencia-curl-rbac.png)
 
 Caso de Prueba: Simulación de Autenticación y Control de Roles (RBAC)
 Propósito: Validar que la API del MVP procesa correctamente los payloads de inicio de sesión de los operadores en terreno y encapsula las credenciales y alcances de permisos de la NTI-05.
@@ -30,10 +30,10 @@ Comportamiento Perimetral: El backend procesó las cabeceras Content-Type: appli
 ## 2. Integración y Pruebas de API - WhatsApp
 
 ### Propósito
-[Escribe aquí el objetivo de esta prueba, por ejemplo: Validar el envío de notificaciones automáticas de entrega al cliente]
+Validar que la Capa de Negocio del MVP es capaz de estructurar y despachar payloads en formato JSON bajo los estándares de autorización por token (*Bearer Token*) que exige Meta para las notificaciones automatizadas de la NTI-02.
 
 ### Evidencia de la Terminal
-![Evidencia WhatsApp](../evidencias/evidencia-whatsapp.png)
+![Evidencia WhatsApp](/evidencias/evidencia-whatsapp.png)
 
 ### Análisis Técnico
 * Caso de Prueba: Simulación de Mensajería y Redirección (WhatsApp Business API)
@@ -46,16 +46,16 @@ Respuesta de Redirección Controlada: El servidor perimetral procesó los 281 by
 
 ---
 
-## 3. Pasarela de Pagos - Transbank / Webpay 💳
+## 3. Pasarela de Pagos - Transbank / Webpay
 
 ### Propósito
-[Escribe aquí el objetivo, por ejemplo: Verificar la respuesta del Sandbox de Webpay ante transacciones simuladas]
+Validar el comportamiento de la pasarela ante solicitudes de autenticación en ambientes de certificación, garantizando tanto el bloqueo perimetral ante credenciales inválidas (Camino Triste) como la correcta asignación de Tokens de Pago bajo identificadores comerciales abiertos (Camino Feliz).
 
 ### Evidencia de la Terminal
-![Evidencia Transbank](../evidencias/evidencia-transbank.png)
+![Evidencia Transbank](/evidencias/evidencia-transbank.png)
 
 ### Análisis Técnico
-* Evidencias de Pruebas de Integración de APIs (QA)
+Evidencias de Pruebas de Integración de APIs (QA)
 Caso de Prueba 01: Simulación de Fallo de Autenticación (Camino Triste)
 Protocolo de Entrada: Solicitud HTTP/2 POST a la dirección de Transbank inyectando un código de comercio no emparejado (597020000540).
 Resultado Observable: El servidor de certificación responde con una cabecera < HTTP/2 401 y un cuerpo JSON con el mensaje {"error_message":"Not Authorized"}.
