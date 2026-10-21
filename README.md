@@ -100,6 +100,7 @@ Validar el comportamiento de la pasarela ante solicitudes de autenticación en a
 ### Evidencia de la Terminal
 ![Evidencia Transbank](/evidencias/evidencia-transbank.png)
 
+
 ### Análisis Técnico
 Evidencias de Pruebas de Integración de APIs (QA)
 Caso de Prueba 01: Simulación de Fallo de Autenticación (Camino Triste)
@@ -107,4 +108,5 @@ Protocolo de Entrada: Solicitud HTTP/2 POST a la dirección de Transbank inyecta
 Resultado Observable: El servidor de certificación responde con una cabecera < HTTP/2 401 y un cuerpo JSON con el mensaje {"error_message":"Not Authorized"}.
 Conclusión de Arquitectura: El sistema de protección perimetral Imperva bloqueó la transacción correctamente. Esto valida que la seguridad de Webpay funciona rechazando peticiones que no cuenten con llaves vigentes en el backend.
 Caso de Prueba 02: Solicitud de Token de Pago (Camino Feliz)
-Protocolo de Entrada: Solicitud HTTP/2 POST ut
+Protocolo de Entrada: Solicitud HTTP/2 POST utilizando el ID comercial de integración abierto (597055555532).
+Resultado Esperado: Retorno de código de estado HTTP/2 200 OK, acompañado de un token criptográfico dinámico y una URL de pasarela para iniciar el flujo seguro de Webpay Plus.
