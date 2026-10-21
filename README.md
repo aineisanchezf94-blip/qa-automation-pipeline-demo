@@ -6,7 +6,7 @@ Este repositorio contiene el diseño e implementación de un **Pipeline de Integ
 
 ---
 
-## 🛠️ Tecnologías y Herramientas Utilizadas
+## Tecnologías y Herramientas Utilizadas
 
 *   **CI/CD Engine:** GitHub Actions
 *   **Formatos:** YAML
